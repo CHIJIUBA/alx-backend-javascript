@@ -1,3 +1,5 @@
-test('adds 1 + 2 to equal 3', () => {
-    expect(1 + 2).toBe(3);
-  });
+import { taskFirst, taskNext } from './0-constants.js';
+
+test('tasks are correctly defined', () => {
+  expect(`${taskFirst()} ${taskNext()}`).toEqual("I prefer const when I can. But sometimes let is okay");
+});
